@@ -93,6 +93,8 @@ You can filter your search results by specifying specific domains or a
         domains=["site1.example.com", "site2.example.com"]
     )
 
+*NB:* If no search results are found with and of the filters applied, the GSA will fall back to returning any results it finds without filtering. So for example, if you're asking for Chinese documents, but the GSA only finds results in English, it will still return those results. Similarly, if it can't find any results in the requested domains, it will simply return results from all domains.
+
 Getting accurate totals
 ~~~~~~~~~~~~~~~~~~~~~~~
 
